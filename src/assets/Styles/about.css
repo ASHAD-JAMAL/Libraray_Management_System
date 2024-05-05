@@ -19,6 +19,7 @@
 }
 .boxCard{
     transition: transform 0.3s ease;
+    border-radius: 1.0rem;
 }
 .boxCard:hover{
     border-top: none;
@@ -31,8 +32,6 @@
   }
   
   .cardtitle:hover {
-    background-color: #104adc; /* Background color on hover */
-    border: 2px solid #104adc; /* Border style and color on hover */
     border-radius: 0.25rem; /* Optional: add border radius for a rounded look */
     color: white !important; /* Text color on hover */
   }

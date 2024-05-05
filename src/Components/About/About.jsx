@@ -1,7 +1,8 @@
 import React from "react";
 import "../../assets/Styles/about.css";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 import Card from "./Card";
+import Slider from "../../Slider";
 export default function About() {
   return (
     <>
@@ -100,11 +101,13 @@ export default function About() {
               </div>
             </div>
           </div>
-          <div className="col-md-4">
-            <p>Slider In Processing</p>
+          <div className="col-md-5 d-none d-md-block">
+            <Slider />
           </div>
         </div>
       </div>
+
+      {/* ************************************category section start******************************************************* */}
 
       <div className="container-fluid p-5">
         <div className="row justify-content-center align-items-center text-center">
@@ -113,9 +116,9 @@ export default function About() {
               <h1>Our Category</h1>
             </div>
             <div className="diamond">
-              <i className="bi bi-diamond-fill mx-2"></i>
-              <i className="bi bi-diamond-fill mx-2"> </i>
-              <i className="bi bi-diamond-fill mx-2"></i>
+              <i className="bi bi-diamond-fill mx-1"></i>
+              <i className="bi bi-diamond-fill mx-1"> </i>
+              <i className="bi bi-diamond-fill mx-1"></i>
             </div>
             <div className="para">
               <p>
@@ -129,21 +132,63 @@ export default function About() {
 
         {/* 2nd section of category start  */}
         <div className="row justify-content-evenly align-items-center">
-          <div className="col-md-2 col-10">
-            <Card icon={<i className="bi bi-music-note-beamed text-white fw-bold"></i>} style={{backgroundColor: "#2352c5",height:"50px",width:"50px",transform:"rotate(45deg)"}} title="Music & Art"/>
+          <div className="col-md-2 col-12">
+            <Card
+              icon={
+                <i className="bi bi-music-note-beamed text-white fw-bold position-fixed mt-2 mx-auto"></i>
+              }
+              style={{
+                backgroundColor: "#2352c5",
+                height: "50px",
+                width: "50px",
+                transform: "rotate(45deg)",
+              }}
+              buttonColor="#2352c5"
+              title="Music & Art"
+            />
           </div>
-          <div className="col-md-2 col-10">
-          <Card icon={<i className="bi bi-cash-coin text-white fw-bold"></i>} style={{ backgroundColor: "#d9346a",height:"50px",width:"50px",transform:"rotate(45deg)"}} title="Marketing"/>
+          <div className="col-md-2 col-12">
+            <Card
+              icon={<i className="bi bi-cash-coin text-white fw-bold position-fixed mt-2 mx-auto"></i>}
+              style={{
+                backgroundColor: "#d9346a",
+                height: "50px",
+                width: "50px",
+                transform: "rotate(45deg)",
+              }}
+              title="Marketing"
+              buttonColor="#d9346a"
+            />
           </div>
-          <div className="col-md-2 col-10">
-          <Card icon={<i className="bi bi-bank text-white fw-bold"></i>} style={{ backgroundColor: "#fec826",height:"50px",width:"50px",transform:"rotate(45deg)"}} title="Politics"/>
+          <div className="col-md-2 col-12">
+            <Card
+              icon={<i className="bi bi-bank text-white fw-bold position-fixed mt-2 mx-auto"></i>}
+              style={{
+                backgroundColor: "#fec826",
+                height: "50px",
+                width: "50px",
+                transform: "rotate(45deg)",
+              }}
+              buttonColor="#fec826"
+              title="Politics"
+            />
           </div>
-          <div className="col-md-2 col-10">
-          <Card icon={<i className="bi bi-globe2 text-white fw-bold"></i>} style={{ backgroundColor: "#4bbd49",height:"50px",width:"50px",transform:"rotate(45deg)"}} title="Geography"/>
+          <div className="col-md-2 col-12">
+            <Card
+              icon={<i className="bi bi-globe2 text-white fw-bold position-fixed mt-2 mx-auto"></i>}
+              style={{
+                backgroundColor: "#4bbd49",
+                height: "50px",
+                width: "50px",
+                transform: "rotate(45deg)",
+              }}
+              buttonColor="#4bbd49"
+              title="Geography"
+            />
           </div>
-            <div className="seemorebtn text-center pt-4">
-                <button className="btn">See More</button>
-            </div>
+          <div className="seemorebtn text-center pt-4">
+            <button className="btn">See More</button>
+          </div>
         </div>
       </div>
     </>
