@@ -1,0 +1,36 @@
+/* Example CSS styling for NavLink */
+.nav-link {
+    color: #333; /* Default link color */
+    text-decoration: none; /* Remove default underline */
+    margin-right: 15px; /* Adjust spacing between links */
+  }
+  
+  .nav-link:hover {
+    color: #555; /* Hover color */
+  }
+  
+  .nav-link.active {
+    color: #007bff; /* Active link color */
+    font-weight: bold; /* Make active link bold */
+  }
+
+  /* button  */
+  /* .login-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+   */
+  .login-btn button {
+    padding: 10px 20px;
+    margin: 0 5px;
+    border: 1px solid black;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #333;
+    font-weight: bold;
+  }
+  .login-btn button:hover{
+    background-color: #242424;
+    color: white;
+  }

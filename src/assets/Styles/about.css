@@ -1,0 +1,39 @@
+.CardIcon i{
+    color: #2352c5;
+    font-size: 25px;
+}
+.diamond i{
+    color: #2352c5;
+    font-size: 15px;
+}
+.seemorebtn button{
+    background-color: #2352c5;
+    color: white;
+    font-weight: 700;
+    padding: 10px;
+}
+.seemorebtn button:hover{
+    background-color: #104adc;
+    color: white;
+    font-weight: 700;
+}
+.boxCard{
+    transition: transform 0.3s ease;
+}
+.boxCard:hover{
+    border-top: none;
+    transform: translateY(-5px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.cardtitle {
+    padding: 0.5rem; /* Adjust padding to match desired spacing */
+    text-align: center;
+  }
+  
+  .cardtitle:hover {
+    background-color: #104adc; /* Background color on hover */
+    border: 2px solid #104adc; /* Border style and color on hover */
+    border-radius: 0.25rem; /* Optional: add border radius for a rounded look */
+    color: white !important; /* Text color on hover */
+  }
+  
