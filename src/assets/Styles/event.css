@@ -1,0 +1,26 @@
+.event{
+    background-color: #fff;
+}
+.eventSpan{
+    color: #5b5b5b;
+}
+.time{
+    font-size: 20px;
+    font-weight: 600;
+}
+.date{
+    font-size: 20px;
+    font-weight: 600;
+}
+.view{
+    text-decoration: none;
+    background-color: #fff;
+    color: #5b5b5b;
+    padding: 10px;
+}
+.view:hover{
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    background-color: blue;
+    color: #fff;
+}
