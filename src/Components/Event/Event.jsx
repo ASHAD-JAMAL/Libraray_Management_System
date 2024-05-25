@@ -30,14 +30,13 @@ export default function Event() {
                 style={{ maxWidth: "540px" }}
               >
                 <div>
-                  {" "}
                   <h4 className="date">
                     <i className="bi bi-caret-right-fill"></i>
                     July 20, 2024
                   </h4>
                 </div>
                 <div>
-                  <span className="time">02:30 AM</span>
+                  <span className="time">02:30 PM</span>
                 </div>
               </div>
               <div
@@ -69,6 +68,20 @@ export default function Event() {
                       </p>
                     </div>
                   </div>
+                </div>
+              </div>
+              <div
+                className="hfour d-flex justify-content-between"
+                style={{ maxWidth: "540px" }}
+              >
+                <div>
+                  <h4 className="date">
+                    <i className="bi bi-caret-right-fill"></i>
+                    July 21, 2024
+                  </h4>
+                </div>
+                <div>
+                  <span className="time">11:30 AM</span>
                 </div>
               </div>
               <div
@@ -104,8 +117,8 @@ export default function Event() {
               </div>
             </div>
             <div className="viewmore p-5">
-                <Link className="float-end view">View More →</Link>
-              </div>
+              <Link className="float-end view">View More →</Link>
+            </div>
           </div>
         </div>
       </div>

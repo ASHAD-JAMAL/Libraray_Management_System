@@ -3,6 +3,13 @@ import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import InputGroup from "react-bootstrap/InputGroup";
 import "../../assets/Styles/Books.css";
+import "./BookCard";
+import BookCard from "./BookCard";
+import book1 from "../../assets/images/book-xs-1.jpg";
+import book2 from "../../assets/images/book-xs-2.jpg";
+import book3 from "../../assets/images/book-xs-3.jpg";
+import book4 from "../../assets/images/book-xs-4.jpg";
+
 export default function Book() {
   return (
     <>
@@ -62,6 +69,40 @@ export default function Book() {
                     <span>6</span> of <span>76</span> Book Found
                   </p>
                 </div>
+              </div>
+            </div>
+            <div className="row d-flex justify-content-between align-content-between">
+              <div className="col-md-5 mt-4">
+                <BookCard
+                  image={book1}
+                  book="Smothered In Hughs"
+                  author="By John Doe"
+                  para="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, nemo."
+                />
+              </div>
+              <div className="col-md-5 mt-4">
+                <BookCard
+                  image={book2}
+                  book="The Art Of The Surf"
+                  author="By Mako Sheffield"
+                  para="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, nemo."
+                />
+              </div>
+              <div className="col-md-5 mt-4 mb-4">
+                <BookCard
+                  image={book3}
+                  book="The Art Of The Surf"
+                  author="By Mako Sheffield"
+                  para="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, nemo."
+                />
+              </div>
+              <div className="col-md-5 mt-4 mb-4">
+                <BookCard
+                  image={book4}
+                  book="The Art Of The Surf"
+                  author="By Mako Sheffield"
+                  para="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, nemo."
+                />
               </div>
             </div>
           </div>
