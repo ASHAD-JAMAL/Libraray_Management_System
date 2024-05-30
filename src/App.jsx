@@ -8,6 +8,8 @@ import Team from "./Components/Team/Team";
 import Event from "./Components/Event/Event";
 import Client from "./Components/Client/Client";
 import Book from "./Components/Books/Book";
+import Login from "./Components/Login/Login";
+import Register from "./Components/Register/Register";
 function App() {
 
   return (
@@ -20,6 +22,8 @@ function App() {
           <Route path="event" element={<Event/>}/>
           <Route path="client" element={<Client/>}/>
           <Route path="books" element={<Book/>}/>
+          <Route path="login" element={<Login/>}/>
+          <Route path="register" element={<Register/>}/>
         </Route>
       </Routes>
     </>

@@ -2,7 +2,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Offcanvas from "react-bootstrap/Offcanvas";
-import { NavLink } from "react-router-dom";
+import {Link,NavLink } from "react-router-dom";
 import "../../assets/Styles/header.css";
 import logo from "../../assets/images/logo.png";
 function OffcanvasExample() {
@@ -78,8 +78,11 @@ function OffcanvasExample() {
                 </NavLink>
               </Nav>
               <div className="login-btn">
+                <Link to="/login">
                 <button className="btn">Login</button>
-                <button className="btn">Register</button>
+                </Link>
+                <Link to="/register">
+                <button className="btn">Register</button></Link>
               </div>
             </Offcanvas.Body>
           </Navbar.Offcanvas>
